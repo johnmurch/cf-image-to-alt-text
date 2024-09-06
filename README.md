@@ -25,3 +25,12 @@ curl -X POST http://localhost:8787/api/v1/image \
   "url": "https://www.johnmurch.com/assets/img/john-murch.jpg"
 }'
 ```
+
+Example output
+
+```
+{
+	"imageUrl": "https://www.johnmurch.com/assets/img/john-murch.jpg",
+	"altText": "A man wearing a plaid shirt and a black shirt is smiling."
+}
+```
