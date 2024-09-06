@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { downloadImage, generateAltText } from "./utils";
+import { generateAltText } from "./utils";
 
 const app = new Hono();
 

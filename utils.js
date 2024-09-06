@@ -34,13 +34,3 @@ export async function generateAltText(url, env) {
     return "Error generating alt text for the image.";
   }
 }
-
-export async function downloadImage(imageUrl) {
-  const response = await fetch(imageUrl);
-  if (!response.ok) {
-    throw new Error("Failed to download image");
-  }
-  const contentType = response.headers.get("Content-Type");
-  const imageBuffer = await response.arrayBuffer(); // Get image as binary data
-  return { imageBuffer, contentType };
-}
