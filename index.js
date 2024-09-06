@@ -1,8 +1,6 @@
 import { Hono } from "hono";
 import { downloadImage, generateAltText } from "./utils";
 
-import jwt from "@tsndr/cloudflare-worker-jwt";
-
 const app = new Hono();
 
 app.post("/api/v1/image", async (c) => {
